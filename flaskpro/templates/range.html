@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUXURY MEN ASSOCIATION</title>
+    <link rel="shortcut icon" href="/static/pictures/main_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}"></head>
+<body>
+    <div class="std_reg">
+        <a href="/"><img src="/static/pictures/main_icon.png" class="logo" alt="home button"></a>
+        <a href="/login_trvl" ><button class="clue"><span>RETURN <br>&#8594 &#8594</span></button></a>
+    <!-- <button><a href="/login_trvl">back</a></button> -->
+    <br><br>
+    <center>
+    <legend style="font-size: 5vh; text-decoration: underline; text-decoration-color: black;"><u>EDIT YOUR LUXURY MEN MEMBERSHIP FORM</u></legend><br><br>
+    <form action="/clar" method="POST">
+       <fieldset >
+        
+           <p class="form_t"><b>Member name:</b></p><br>
+           <input type="text" class="box" name="name" placeholder="name."><br>
+           <br>
+           <p class="form_t"><b>Type your Complain:</b></p><br>
+           <textarea style="height: 25%; width: 20%; border-radius: 10%; background-color: black; color: blanchedalmond;" name="from_text" cols="20" rows="5" placeholder="write what you want the admin to edit in your travelling details. Thank you for choosing us">
+
+           </textarea>
+           <br><br>
+           <button type="submit" class="reg" onclick="alert('Are sure you want to submit.')">Submit</button>
+
+       </fieldset>
+   </form>
+ </div>
+</center>
+
+<div class="end">
+
+</div>
+
+</body>
+</html>

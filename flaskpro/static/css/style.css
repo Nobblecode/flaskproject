@@ -1,0 +1,342 @@
+        
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .top{
+            height: 4%;
+            bottom: 0;
+            left: 0;
+            position: absolute; 
+            justify-content: space-between;
+        }
+        .logo{
+            height: 15%;
+            width: 11vw;
+            position: absolute;
+            padding: 0;
+            margin-top: 3px;
+            margin-left: 5px;
+        }
+        .dive{
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width:100vw;
+            background-image: url("/static/pictures/back.jpg");
+            height: 100vh;
+            position: relative;
+        }
+        .align{
+            box-shadow:2px solid rgb(226, 187, 13);
+            border-bottom: 4px rgb(218, 14, 31);
+            bottom: 0;
+            left: 0;
+            position: absolute;
+            background-color:rgba(4, 148, 11, 0.501);
+            width: 95%;
+            height: 20vh;
+            border-radius: 30px;
+            transform: translate(2%, -5%);
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .btn_check{
+            cursor: pointer;
+            background-color: rgb(49, 14, 174);
+            height: 60%;
+            width: 25%;
+            border-bottom: rgb(17, 160, 29);
+            border-radius: 30%;
+            border-style:solid;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+        }
+        .clog_btn{
+            cursor: pointer;
+            background-color: rgb(133, 194, 20);
+            height: 60%;
+            width: 21%;
+            border-bottom: rgb(189, 8, 8);
+            border-radius: 30%;
+            border-style:solid;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+        }
+        .btn_check:hover{
+            background-color: rgb(114, 13, 6);
+            color: rgb(111, 10, 228);
+            width: 30%;
+            height: 40%;
+            transition: all ease-in-out 0.7s;
+        }
+        .clog_btn:hover{
+            background-color: rgb(201, 214, 15);
+            color: rgb(12, 153, 52);
+            width: 20%;
+            height: 40%;
+            transition: all c 0.7s;
+        }
+        .btn_check span:after{
+            content: '>>';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.2s;
+        }
+        .btn_check span{
+           cursor: pointer;
+           display: inline-block;
+           position: relative;
+           transition: 0.9s;
+        }
+        .btn_check:hover span{
+            padding-right: 25px;
+        }
+        .btn_check:hover span::after{
+            opacity: 1;
+            right: 0;
+        }
+
+        .clog_btn span:after{
+            content: '>>';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.2s;
+        }
+        .clog_btn span{
+           cursor: pointer;
+           display: inline-block;
+           position: relative;
+           transition: 0.9s;
+        }
+        .clog_btn:hover span{
+            padding-right: 25px;
+        }
+        .clog_btn:hover span::after{
+            opacity: 1;
+            right: 0;
+        }
+        .std_all{
+            background-color: rgb(187, 169, 9);
+            color: rgb(13, 10, 177);
+        }
+        .vex{
+           background-color: rgb(166, 202, 5);
+           color: rgb(38, 21, 197);
+           height: 3vw;
+           width: 18vw;
+           border-radius: 20px;
+        }
+        .vex:hover{
+            background-color:rgb(191, 223, 12);
+            color: rgb(9, 2, 128);
+            transition:all ease-in-out 0.6s;
+            height: 4vw;
+            width: 20vw;
+        }
+
+        .std_reg{
+            /* background-color: burlywood; */
+            background-image: url("/static/pictures/aa.jpg");
+            color: rgb(219, 228, 165);
+        }
+        .student{color: rgb(240, 13, 13);
+            background-color: rgb(26, 15, 2);
+            color: rgb(10, 146, 10);
+
+        }
+        .clue{
+            height: 39px;
+            background-color: rgb(58, 34, 3);
+            margin-top: 1%;
+            color: rgb(41, 155, 6);
+            border-style: ridge;
+            box-sizing: border-box;
+            border-radius: 40px;
+            margin-left: 85vw;
+            white-space: pre-wrap;
+            width: 15%;
+        }
+    .footer{
+        height: 29vh;
+        background-color: black;
+    }
+ 
+  .reg{
+    height: 5vmin;
+    width: 15vh;
+    border-radius: 30px;
+    font-size: 100%;
+  }      
+ .box{
+     height: 6vmin;
+     width: 45vh;
+     color:rgb(216, 132, 5);
+     stroke-dashoffset: 6px;
+     background-color: rgb(211, 198, 25);
+     border-radius: 30px;
+     font-size: 100%;
+ }
+ .flask span{
+    text-decoration: underline; 
+    background-color: rgb(167, 103, 7);
+    color: rgb(159, 201, 6);
+    font-size: xx-large;
+ }
+ .flask span:hover{
+     background-color: rgb(236, 8, 8);
+     color: rgb(31, 52, 173);
+     border-radius: 10px;
+ }
+.bos{
+    border-radius: 3px;
+    height: 5vmin;
+}
+ .bos:hover{
+    color: rgb(10, 168, 23);
+    transition: all ease-in-out 0.6s;
+    height: 4vh;
+    width: 20vh;
+    border-radius: 14px;
+    background-color: rgb(131, 153, 4);
+ }
+ /* =========================
+
+ ========================= */
+.clue:hover{
+    color: rgb(157, 173, 8);
+    background-color: rgb(30, 4, 122);
+    height: 40px;
+    width: 14%;
+    transition: all ease-in-out 0.7s;
+ 
+}
+.reg:hover{
+    color: rgb(57, 20, 158);
+    background-color: rgb(8, 26, 128);
+    height: 6px; 
+    width: 16vh; 
+    transition: all ease-in-out 0.7s; 
+
+}
+.footer{
+    color: rgb(96, 141, 13);
+}
+.foots{
+    background-color: rgb(190, 13, 66);
+    height: 29vw;
+    width: 99vw;
+}
+.footer:hover{
+background-color: rgb(15, 161, 64);
+color:rgb(30, 5, 141);
+transition: all ease-in-out 0.8s;
+}
+
+.p_tag:hover{
+color: rgb(15, 150, 31);
+text-decoration: underline;
+}
+.form_t{
+    padding-right: 40vh;
+    margin-right: 7px;
+    text-decoration: rgb(199, 213, 10);
+    font-size: larger;
+}
+.preview{
+    margin-left: 400%;
+    padding-left: 48%;
+}
+.arrange{
+    text-align: center;
+    padding-left: 25%;
+}
+.from_text{
+    padding-left:1%;
+    text-align: center;
+    color: rgb(230, 218, 224);
+}
+.from_text p{
+    margin-left: 60%;
+}
+.down:hover{
+    transition: all ease-in-out 0.9s;
+    height: 60vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color:rgb(172, 209, 9) ; 
+}
+.down{
+    color: rgb(153, 209, 21);
+    height: 60vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(145, 12, 12);
+}
+.std_rep{
+    background-image: url("/static/pictures/pexel10.jpg");
+    height: 10%;
+    color: rgb(3, 182, 39);
+}
+
+
+
+.dow{
+    color: rgb(186, 199, 6);
+    height: 30vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(245, 16, 16); 
+}
+.check{
+    height: 90%;
+    width:10%;
+    border-radius: 30%;
+    background-color: rgb(164, 212, 31);
+    color: rgb(4, 160, 56);
+}
+.check:hover{
+    background-color: rgb(189, 67, 10);
+    color: rgb(55, 11, 179);
+    border-radius: 15%;
+}
+.end{
+    background-color: rgb(105, 179, 10);
+    height: 21vw;
+    width: 99vw; 
+}
+
+.all{
+    background-color: rgb(235, 220, 12);
+    color: rgb(8, 12, 233);
+}
+
+.cls{
+    background-color: rgb(209, 248, 35);
+    color: rgb(62, 167, 1);
+}
+.btn-cls{
+    font-size: x-large;
+    height: 4vw;
+    width: 25%;
+    border-radius: 20px;
+}
+.btn-cls:hover{
+    background-color: rgb(8, 35, 190);
+    color: rgb(206, 7, 7);
+    width:30%;
+    transition: all ease-in-out 0.8s;
+}

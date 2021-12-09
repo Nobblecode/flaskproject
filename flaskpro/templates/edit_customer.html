@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<htmlia lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUXURY MEN ASSOCIATION</title>
+    <link rel="shortcut icon" href="/static/pictures/main_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">   
+</head>
+<body class="all">
+  
+   <div class="std_reg">
+    <a href=""><img src="/static/pictures/main_icon.png" class="logo" alt="home button"></a>
+    <a href="/back" ><button class="clue"><span>RETURN <br>&#8594 &#8594</span></button></a><br><br>
+    <center><h1><u>EDIT MEMBER DETAILS</u></h1></center>
+<br><br><br><hr><br><br><hr><br><center>
+<form action="{{ url_for( 'edit_customer', id=delist.ID)}}" method="POST">
+
+    <input type="file" name="filenamee" class="box" value="{{delist.filenamee}}" placeholder="filename">
+    <br><br>
+    <input type="text" name="country" class="box" value="{{delist.country}}" placeholder="country">
+    <br><br>
+    <input type="text" name="statee" class="box" value="{{delist.statee}}" placeholder="state">
+    <br><br>
+    <input type="text" name="town" class="box" value="{{delist.town}}">
+    <br><br>
+    <input type="text" name="about_you" class="box" value="{{delist.about_you}}">
+    <br><br>
+    <input type="submit" class="reg" onclick="alert('Are sure you sure you have edited it..')" value="submit">
+    <br><br>
+    <hr><br><br><hr>
+</form>
+</div>
+</center>
+</body>
+</html>

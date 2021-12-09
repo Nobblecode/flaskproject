@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUXURY MEN ASSOCIATION</title>
+    <link rel="shortcut icon" href="/static/pictures/main_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+</head>
+<body>
+    <!-- <a href="/system"><button >back</button></a> -->
+<div class="std_reg">
+        <a href=""><img src="/static/pictures/main_icon.png" class="logo" alt="home button"></a>
+        <a href="/system" ><button class="clue"><span>RETURN <br>&#8594 &#8594</span></button></a>
+
+        <center><br>
+          
+        <h1 style="font-size: 5vh; text-decoration: underline;">FILL IN YOUR LOCATION.</h1>
+        <form action="/trvl_d" method="POST">
+            <h2 class="flask" style="padding-top: 5%;">Welcome to Men Luxury Associaton<b> -- </b><u style="text-transform: uppercase;">{{verify.name}}</u><br><br></h2>
+        <br>
+        <br>
+            <b class="form_t">UPLOAD PASSPORT:</b><br>
+            <input type="file" class="bos" style="border-radius: 5px;" id="myfile" name="filenamee" required>
+            <br><br>
+            <input type="text" class="box"  name="country" placeholder="Country" required>
+            <br><br>
+            <input type="text" class="box"  name="statee" placeholder="State" required>
+            <br><br>
+            <input type="text"class="box"  name="town" placeholder="Town" required>
+            <br><br>
+            <!-- <textarea class="box" name="textarea" rows="4" cols="10"  placeholder="About Your Self" style="width:50px; height:20px;"></textarea>"  -->
+            <input type="text"class="box" rows="4" cols="10" name="about_you" id="myTextArea" placeholder="About Your Self" required>
+            <br><br>
+            <input type="submit" class="box" value="submit" required>
+            <br><br>
+        </center>
+        </form>
+    </div><hr style="background-color:2px rgb(3, 3, 3);">
+       <div class="student">
+        <center>
+            <p class="p_tag">For More Enquiry..  Contact  Admin</p><br><a href="/range" ><button class="reg">ADMIN</button></a><br>
+        </center>
+           <br>
+    </div>
+    <div class="footer">
+        <center><h2 style="color: black;">WE WELCOME YOU TO LUXURY MEN ASSOCIATION</h2></center>
+        <center><p><b> </p></center>
+    </div>
+           
+</body>
+</html>
